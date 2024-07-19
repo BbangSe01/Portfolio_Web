@@ -67,7 +67,7 @@ export default function Page_4() {
           whileInView={{
             opacity: 1,
             x: 0,
-            transition: { type: "spring", delay: 0.3 },
+            transition: { type: "spring", bounce: 0.7, delay: 0.3 },
           }}
         >
           <a href="https://github.com/BbangSe01" target="_blank">
@@ -84,7 +84,7 @@ export default function Page_4() {
           whileInView={{
             opacity: 1,
             x: 0,
-            transition: { type: "spring", delay: 0.3 },
+            transition: { type: "spring", bounce: 0.7, delay: 0.3 },
           }}
         >
           <a href="https://velog.io/@sehyeon_zzang/posts" target="_blank">
