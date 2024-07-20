@@ -5,6 +5,7 @@ import skillImage3 from "../assets/images/reactimage.png";
 import skillImage4 from "../assets/images/github.png";
 import skillImage5 from "../assets/images/sqld.png";
 import { motion } from "framer-motion";
+import "./font.css";
 
 const Styledback2 = styled.div`
   margin-top: -70px;
@@ -15,8 +16,9 @@ const Styledback2 = styled.div`
 `;
 
 const P3title = styled.h1`
-  font-size: 100px;
+  font-size: 105px;
   padding-left: 50px;
+  font-family: "DungGeunMo";
 `;
 
 const Gridiv = styled.div`
@@ -26,7 +28,7 @@ const Gridiv = styled.div`
 
 const SkillImage = styled.img`
   width: 100%;
-  height: 100%;
+  height: 60%;
   border: 1px solid white;
   border-radius: 15px;
 `;
@@ -90,9 +92,10 @@ const SkillBox4 = styled(motion.div)`
 `;
 const Skilltitle = styled.p`
   color: black;
-  font-size: 25px;
+  font-size: 27px;
   font-weight: bold;
   text-align: center;
+  font-family: "DungGeunMo";
 `;
 
 export default function Page_3() {
@@ -102,7 +105,7 @@ export default function Page_3() {
       <Gridiv>
         <SkillBox1
           initial={{ scale: 0 }}
-          whileInView={{ scale: 1, rotateZ: 360 }}
+          whileInView={{ scale: 1, rotateX: 360 }}
           transition={{
             duration: 1,
             type: "spring",
@@ -116,8 +119,9 @@ export default function Page_3() {
         </SkillBox1>
         <SkillBox2
           initial={{ scale: 0 }}
-          whileInView={{ scale: 1, rotateZ: 360 }}
+          whileInView={{ scale: 1, rotateX: 360 }}
           transition={{
+            delay: 0.2,
             duration: 1,
             type: "spring",
             stiffness: 170, //강성, 값이 높을수록 빠르게 제자리로 돌아옴
@@ -129,8 +133,9 @@ export default function Page_3() {
         </SkillBox2>
         <SkillBox3
           initial={{ scale: 0 }}
-          whileInView={{ scale: 1, rotateZ: 360 }}
+          whileInView={{ scale: 1, rotateX: 360 }}
           transition={{
+            delay: 0.4,
             duration: 1,
             type: "spring",
             stiffness: 170, //강성, 값이 높을수록 빠르게 제자리로 돌아옴
@@ -142,8 +147,9 @@ export default function Page_3() {
         </SkillBox3>
         <SkillBox4
           initial={{ scale: 0 }}
-          whileInView={{ scale: 1, rotateZ: 360 }}
+          whileInView={{ scale: 1, rotateX: 360 }}
           transition={{
+            delay: 0.6,
             duration: 1,
             type: "spring",
             stiffness: 170, //강성, 값이 높을수록 빠르게 제자리로 돌아옴

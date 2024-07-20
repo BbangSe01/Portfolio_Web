@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { Link } from "react-router-dom";
+import "./font.css";
 
 // Keyframes 정의
 const animate1 = keyframes`
@@ -48,6 +48,8 @@ const Title = styled.div`
   word-spacing: 2px;
   color: #fff;
   animation: ${animate2} 3s linear forwards;
+  font-family: "NEXON Lv1 Gothic OTF";
+  margin-top: 10px;
 `;
 
 const H1 = styled.h1`
@@ -78,22 +80,28 @@ const P1_a = styled.a`
   text-decoration-line: none;
   color: white;
 `;
+
+const Navtitle = styled.li`
+  list-style-type: none;
+  font-family: "NEXON Lv1 Gothic OTF";
+`;
+
 const Page1 = () => {
   return (
     <BackImage>
       <Wrapper>
         <Nav>
           <P1_a href="#sectionTwo">
-            <li>About me</li>
+            <Navtitle>About me</Navtitle>
           </P1_a>
           <P1_a href="#sectionThree">
-            <li>Skills</li>
+            <Navtitle>Skills</Navtitle>
           </P1_a>
           <P1_a href="#sectionFour">
-            <li>Archiving</li>
+            <Navtitle>Archiving</Navtitle>
           </P1_a>
           <P1_a href="#sectionFive">
-            <li>Projects</li>
+            <Navtitle>Projects</Navtitle>
           </P1_a>
         </Nav>
         <hr />

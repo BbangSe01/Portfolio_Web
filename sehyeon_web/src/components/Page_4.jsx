@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import arc_image1 from "../assets/images/github.png";
 import arc_image2 from "../assets/images/velog.png";
+import "./font.css";
+
 const P4back = styled.div`
   margin-top: -75px;
   background-color: #9e72ca;
@@ -13,6 +15,7 @@ const P4title = styled.h2`
   font-size: 90px;
   margin-left: 590px;
   padding-top: 40px;
+  font-family: "NEXON Lv1 Gothic OTF";
 `;
 
 const P4box = styled.div`
@@ -38,12 +41,14 @@ const EachEx = styled.li`
   margin: 15px;
   margin-left: 55px;
   list-style-type: none;
+  font-family: "NEXON Lv1 Gothic OTF";
 `;
 
 const EachEx2 = styled.li`
   margin: 15px;
   margin-left: 80px;
   list-style-type: none;
+  font-family: "NEXON Lv1 Gothic OTF";
 `;
 const ArcImage = styled.img`
   width: 100%;
@@ -55,6 +60,7 @@ const Linktitle = styled.h2`
   margin-top: -30px;
   text-align: center;
   margin-bottom: -10px;
+  font-family: "Cafe24ClassicType-Regular";
 `;
 
 export default function Page_4() {

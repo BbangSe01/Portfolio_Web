@@ -28,6 +28,7 @@ const Aboutme = styled.p`
   font-weight: bold;
   padding-top: 30px;
   padding-left: 100px;
+  font-family: "NEXON Lv1 Gothic OTF";
 `;
 const Image = styled.img`
   margin-right: 70px;
@@ -56,6 +57,7 @@ const Introtitle = styled(motion.span)`
 const Eachlist = styled.li`
   margin: 15px;
   font-size: 25px;
+  font-family: "NEXON Lv1 Gothic OTF";
 `;
 
 export default function Page_2() {
