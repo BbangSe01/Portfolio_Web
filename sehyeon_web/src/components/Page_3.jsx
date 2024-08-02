@@ -13,12 +13,30 @@ const Styledback2 = styled.div`
   background-color: #c5ca72;
   color: white;
   height: 100%;
+  @media (max-width: 1350px) {
+    margin-top: -60px;
+  }
+  @media (max-width: 900px) {
+    margin-top: -45px;
+  }
 `;
 
 const P3title = styled.h1`
   font-size: 105px;
   padding-left: 50px;
   font-family: "DungGeunMo";
+  @media (max-width: 1350px) {
+    padding-top: 20px;
+    font-size: 85px;
+  }
+  @media (max-width: 900px) {
+    padding-top: 70px;
+    font-size: 60px;
+  }
+  @media (max-width: 650px) {
+    padding-top: 110px;
+    font-size: 45px;
+  }
 `;
 
 const Gridiv = styled.div`
@@ -31,6 +49,9 @@ const SkillImage = styled.img`
   height: 60%;
   border: 1px solid white;
   border-radius: 15px;
+  @media (max-width: 1350px) {
+    height: 50%;
+  }
 `;
 
 const SkillBox1 = styled(motion.div)`
@@ -45,6 +66,30 @@ const SkillBox1 = styled(motion.div)`
   &:hover {
     width: 330px;
     height: 450px;
+  }
+  @media (max-width: 1350px) {
+    width: 200px;
+    height: 300px;
+    &:hover {
+      width: 230px;
+      height: 350px;
+    }
+  }
+  @media (max-width: 900px) {
+    width: 150px;
+    height: 230px;
+    &:hover {
+      width: 180px;
+      height: 260px;
+    }
+  }
+  @media (max-width: 650px) {
+    width: 110px;
+    height: 190px;
+    &:hover {
+      width: 130px;
+      height: 210px;
+    }
   }
 `;
 
@@ -61,6 +106,30 @@ const SkillBox2 = styled(motion.div)`
     width: 330px;
     height: 330px;
   }
+  @media (max-width: 1350px) {
+    width: 200px;
+    height: 200px;
+    &:hover {
+      width: 230px;
+      height: 230px;
+    }
+  }
+  @media (max-width: 900px) {
+    width: 130px;
+    height: 130px;
+    &:hover {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  @media (max-width: 650px) {
+    width: 90px;
+    height: 90px;
+    &:hover {
+      width: 110px;
+      height: 110px;
+    }
+  }
 `;
 const SkillBox3 = styled(motion.div)`
   grid-area: skill3;
@@ -74,6 +143,30 @@ const SkillBox3 = styled(motion.div)`
   &:hover {
     width: 330px;
     height: 330px;
+  }
+  @media (max-width: 1350px) {
+    width: 200px;
+    height: 200px;
+    &:hover {
+      width: 230px;
+      height: 230px;
+    }
+  }
+  @media (max-width: 900px) {
+    width: 130px;
+    height: 130px;
+    &:hover {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  @media (max-width: 650px) {
+    width: 90px;
+    height: 90px;
+    &:hover {
+      width: 110px;
+      height: 110px;
+    }
   }
 `;
 const SkillBox4 = styled(motion.div)`
@@ -89,6 +182,30 @@ const SkillBox4 = styled(motion.div)`
     width: 330px;
     height: 330px;
   }
+  @media (max-width: 1350px) {
+    width: 200px;
+    height: 200px;
+    &:hover {
+      width: 230px;
+      height: 230px;
+    }
+  }
+  @media (max-width: 900px) {
+    width: 130px;
+    height: 130px;
+    &:hover {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  @media (max-width: 650px) {
+    width: 90px;
+    height: 90px;
+    &:hover {
+      width: 110px;
+      height: 110px;
+    }
+  }
 `;
 const Skilltitle = styled.p`
   color: black;
@@ -96,6 +213,15 @@ const Skilltitle = styled.p`
   font-weight: bold;
   text-align: center;
   font-family: "DungGeunMo";
+  @media (max-width: 1350px) {
+    font-size: 18px;
+  }
+  @media (max-width: 900px) {
+    font-size: 14px;
+  }
+  @media (max-width: 650px) {
+    font-size: 10px;
+  }
 `;
 
 export default function Page_3() {
