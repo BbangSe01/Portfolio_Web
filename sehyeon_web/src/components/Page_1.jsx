@@ -24,12 +24,12 @@ const animate2 = keyframes`
 // styled-components를 사용하여 스타일 정의
 const BackImage = styled(motion.div)`
   background-color: black;
-  width: 100%;
-  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
 `;
 
 const Wrapper = styled.div`
-  position: relative;
+  // position: relative;
 `;
 
 const Nav = styled.nav`
@@ -39,10 +39,10 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-evenly;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1350px) {
     font-size: 15px;
   }
-  @media (max-width: 850px) {
+  @media (max-width: 900px) {
     font-size: 10px;
     padding: 10px;
   }
@@ -54,8 +54,7 @@ const Title = styled.div`
   position: absolute;
   text-align: center;
   transform: translate(50%, 0%);
-  top: 200px;
-  // left: 33%;
+  top: 6%;
   font-family: sans-serif;
   letter-spacing: 1px;
   word-spacing: 2px;
@@ -64,7 +63,7 @@ const Title = styled.div`
   animation-delay: 1.5s;
   font-family: "NEXON Lv1 Gothic OTF";
   margin-top: 10px;
-  @media (max-width: 1200px) {
+  @media (max-width: 1350px) {
     margin-top: 20px;
   }
 `;
@@ -73,13 +72,13 @@ const H1 = styled.h1`
   font-size: 70px;
   font-weight: 888;
   text-transform: uppercase;
-  @media (max-width: 1200px) {
+  @media (max-width: 1350px) {
     font-size: 50px;
   }
-  @media (max-width: 850px) {
+  @media (max-width: 900px) {
     font-size: 30px;
   }
-  @media (max-width: 520px) {
+  @media (max-width: 650px) {
     font-size: 20px;
   }
 `;
@@ -90,15 +89,15 @@ const H2 = styled.h2`
   font-weight: 888;
   text-transform: uppercase;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1350px) {
     margin-top: -20px;
     font-size: 17px;
   }
-  @media (max-width: 850px) {
+  @media (max-width: 900px) {
     padding-top: 5px;
     font-size: 10px;
   }
-  @media (max-width: 520px) {
+  @media (max-width: 650px) {
     padding-top: 10px;
     font-size: 8px;
   }
@@ -113,11 +112,11 @@ const Bubble = styled.div`
   position: absolute;
   animation: ${animate1} 10s linear infinite;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1350px) {
     height: 40px;
     width: 40px;
   }
-  @media (max-width: 850px) {
+  @media (max-width: 900px) {
     height: 20px;
     width: 20px;
   }
@@ -164,33 +163,15 @@ const Page1 = () => {
           <H2>Frontend Developer</H2>
         </Title>
         {/* Bubble 요소들 */}
-        <Bubble
-          style={{ top: "500px", left: "10%", animationDuration: "8s" }}
-        />
-        <Bubble
-          style={{ top: "350px", left: "20%", animationDuration: "10s" }}
-        />
-        <Bubble
-          style={{ top: "100px", left: "25%", animationDuration: "3s" }}
-        />
-        <Bubble
-          style={{ top: "600px", left: "40%", animationDuration: "7s" }}
-        />
-        <Bubble
-          style={{ top: "150px", left: "50%", animationDuration: "9s" }}
-        />
-        <Bubble
-          style={{ top: "650px", left: "60%", animationDuration: "5s" }}
-        />
-        <Bubble
-          style={{ top: "390px", left: "73%", animationDuration: "8s" }}
-        />
-        <Bubble
-          style={{ top: "530px", left: "83%", animationDuration: "10s" }}
-        />
-        <Bubble
-          style={{ top: "200px", left: "90%", animationDuration: "6s" }}
-        />
+        <Bubble style={{ top: "18%", left: "10%", animationDuration: "8s" }} />
+        <Bubble style={{ top: "12%", left: "20%", animationDuration: "10s" }} />
+        <Bubble style={{ top: "4%", left: "25%", animationDuration: "3s" }} />
+        <Bubble style={{ top: "17%", left: "40%", animationDuration: "7s" }} />
+        <Bubble style={{ top: "5%", left: "50%", animationDuration: "9s" }} />
+        <Bubble style={{ top: "19%", left: "60%", animationDuration: "5s" }} />
+        <Bubble style={{ top: "13%", left: "73%", animationDuration: "8s" }} />
+        <Bubble style={{ top: "16%", left: "83%", animationDuration: "10s" }} />
+        <Bubble style={{ top: "6%", left: "90%", animationDuration: "6s" }} />
         {/* <Bubble
           style={{ top: "200px", left: "20%", animationDuration: "10s" }}
         />

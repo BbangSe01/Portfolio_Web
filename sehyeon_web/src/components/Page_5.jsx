@@ -6,23 +6,15 @@ import home_button from "../assets/images/home.png";
 import "./font.css";
 
 const P5back = styled.div`
-  margin-top: -75px;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background-color: #6adc90;
-  // overflow: auto;
-  @media (max-width: 1350px) {
-    margin-top: -55px;
-  }
-  @media (max-width: 1000px) {
-    margin-top: -40px;
-  }
+  overflow: auto;
 `;
 
 const P5title = styled.h2`
   color: white;
   font-size: 90px;
-  padding-top: 30px;
   padding-left: 70px;
   font-family: "Giants-Inline";
   @media (max-width: 1350px) {

@@ -12,7 +12,7 @@ const Styledback2 = styled.div`
   padding-bottom: 10px;
   background-color: #c5ca72;
   color: white;
-  height: 100%;
+  min-height: 100vh;
   @media (max-width: 1350px) {
     margin-top: -60px;
   }

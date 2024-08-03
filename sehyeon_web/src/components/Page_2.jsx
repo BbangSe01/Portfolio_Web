@@ -8,16 +8,16 @@ import "./font.css";
 const Styledback = styled.div`
   background-color: black;
   color: white;
-  height: 100%;
+  min-height: 100vh;
   margin-top: -60px;
   @media (max-width: 1350px) {
     margin-top: -50px;
   }
-  @media (max-width: 950px) {
+  @media (max-width: 900px) {
     margin-top: -30px;
   }
   @media (max-width: 650px) {
-    margin-top: -10px;
+    margin-top: -20px;
   }
 `;
 const Ul_List = styled.ul`
@@ -42,7 +42,7 @@ const Aboutme = styled.p`
     padding-top: 80px;
     font-size: 50px;
   }
-  @media (max-width: 950px) {
+  @media (max-width: 900px) {
     padding-top: 120px;
     font-size: 30px;
   }
@@ -61,7 +61,7 @@ const Image = styled.img`
     height: 250px;
     margin-right: 40px;
   }
-  @media (max-width: 950px) {
+  @media (max-width: 900px) {
     width: 220px;
     height: 220px;
     margin-right: 20px;
@@ -95,7 +95,7 @@ const Introtitle = styled(motion.span)`
     width: 600px;
     height: 80px;
   }
-  @media (max-width: 950px) {
+  @media (max-width: 900px) {
     font-size: 30px;
     width: 345px;
     height: 60px;
@@ -115,7 +115,7 @@ const Eachlist = styled.li`
     font-size: 15px;
     margin: 7px;
   }
-  @media (max-width: 950px) {
+  @media (max-width: 900px) {
     font-size: 12px;
   }
   @media (max-width: 650px) {

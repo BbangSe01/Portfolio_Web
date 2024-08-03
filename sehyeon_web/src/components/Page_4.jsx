@@ -7,7 +7,7 @@ import "./font.css";
 const P4back = styled.div`
   margin-top: -75px;
   background-color: #9e72ca;
-  height: 100%;
+  min-height: 100vh;
   @media (max-width: 1150px) {
     margin-top: -58px;
   }
